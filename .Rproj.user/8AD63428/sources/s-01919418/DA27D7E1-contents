@@ -1,8 +1,0 @@
-.main-header .logo {
-  font-family: "Georgia", Times, "Times New Roman", serif;
-  font-weight:  bold;
-}
-
-.text-a {
-  font-weight: bold;
-}

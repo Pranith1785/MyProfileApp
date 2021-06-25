@@ -1,6 +1,7 @@
 
 ## loading the UI files
-source('name_job.R')
+source('profile_page.R')
+source("experience_page.R")
 
 
 ### header
@@ -12,31 +13,38 @@ sidebar <- dashboardSidebar(disable = TRUE,minified = FALSE)
 
 ## Body
 body <- dashboardBody(
+  
+  ## Apply css file
+  tags$head(
+    tags$link(rel = "stylesheet", type = "text/css", href = "style.css")
+  ),
           
   fluidRow(
-      column(width = 2,
+      column(width = 3,
              fluidRow(
                column(width = 12,
                  #box(title = "My Profile",width = NULL)
-                 my_profile("Pranith Kumar Gourisetty","myImage.jpg","Analytical Developer")
+                 my_profile("Pranith Kumar Gourisetty","myImage.jpg","Analytics Development Engineer")
                )
              ),
              fluidRow(
                column(width = 12,
-                      box(title = "My Profile",width = NULL)
+                      program_languages()
                )
              ),
              fluidRow(
                column(width = 12,
-                      box(title = "My Profile",width = NULL)
+                     skills()
                )
              )
         ) ,
-      column(width = 10,
+      column(width = 9,
              box(width = NULL,
                  tabsetPanel(type = "pills",
                      tabPanel(title = "Career",icon = icon("graduation-cap"),
-                              box(title = "TimeLine ",width = NULL)),
+                              #box(title = "TimeLine ",width = NULL)
+                              experience_details()
+                              ),
                      tabPanel(title = "Project",icon = icon("users-cog"),
                               box(title = "Project1",width = NULL,collapsible = TRUE),
                               box(title = "Project3",width = NULL)

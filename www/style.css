@@ -1,8 +1,31 @@
-.main-header .logo {
-  font-family: "Georgia", Times, "Times New Roman", serif;
-  font-weight:  bold;
+.list-group-item {
+   border: 0px solid #ddd !important;
 }
 
-.text-a {
-  font-weight: bold;
+a {
+    color: #353c42;
 }
+
+.label {
+    font-size: 100% !important;
+    line-height: 2 !important;
+}
+
+.text-muted {
+    margin-top: -3px;
+    margin-left: 181px;
+}
+
+.profile-username {
+    margin-top: -79px;
+    margin-left: 165px;
+}
+
+.profile-user-img {
+    margin: 0px;
+    width: 100px;
+    padding: 0px;
+    border: 1px solid #d2d6de;
+    width: 142px;
+}
+
