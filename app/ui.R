@@ -1,7 +1,5 @@
 
-## loading the UI files
-source('profile_page.R')
-source("experience_page.R")
+
 
 
 ### header
@@ -23,7 +21,7 @@ body <- dashboardBody(
       column(width = 3,
              fluidRow(
                column(width = 12,
-                 #box(title = "My Profile",width = NULL)
+                 
                  my_profile("Pranith Kumar Gourisetty","myImage.jpg","Analytics Development Engineer")
                )
              ),
@@ -37,21 +35,35 @@ body <- dashboardBody(
                      skills()
                )
              )
-        ) ,
-      column(width = 9,
+          ),
+      column(width = 7,
              box(width = NULL,
                  tabsetPanel(type = "pills",
-                     tabPanel(title = "Career",icon = icon("graduation-cap"),
-                              #box(title = "TimeLine ",width = NULL)
+                     tabPanel(title = "Career",icon = icon("chart-line"),
                               experience_details()
                               ),
                      tabPanel(title = "Project",icon = icon("users-cog"),
-                              box(title = "Project1",width = NULL,collapsible = TRUE),
+                              project1(),
                               box(title = "Project3",width = NULL)
-                              )
+                              ),
+                     tabPanel(title = "Education",icon = icon("graduation-cap"),
+                              education_details()                  
+                     )
                   )
               )
-       )
+           ),
+      column(width = 2,
+              box(width = NULL,
+                  title = "Achievements",status = "primary"
+              ),
+             box(width = NULL,
+                 title = "Certifications",status = "primary"
+              ),
+             box(width = NULL,
+                 title = "Interests",status = "primary"
+                 )
+             
+            )
     )
   )
 
