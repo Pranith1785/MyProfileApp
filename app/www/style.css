@@ -29,6 +29,15 @@ a {
     width: 142px;
 }
 
+.box-with-no-header .box-header {
+   padding: 0px !important;
+    
+}
+
+.box-with-no-header .box-header.with-border {
+    border-bottom: 0px solid #f4f4f4 !important; 
+}
+
 .navbar-custom-menu{
     float: right !important;
     margin-right: 10px;

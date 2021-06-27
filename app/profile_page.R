@@ -2,7 +2,8 @@
 
 
 my_profile <- function(username = "Pranith Kumar", imgPath,userposition = "looking for job"){
-  
+        
+  div(class = "box-with-no-header",
         box(
           title = "",
           width = NULL,
@@ -33,7 +34,12 @@ my_profile <- function(username = "Pranith Kumar", imgPath,userposition = "looki
             )
           )
         )
+  )
 }
+
+
+
+
 
 program_languages <- function(){
   

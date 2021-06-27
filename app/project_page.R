@@ -4,15 +4,33 @@ project1 <- function(){
   
       box(title = "Water AI Pipe Indicator",
           width = NULL,
-          label = boxLabel("shaj",status = "primary",style = "square"),
+          status = "primary",
+          label = actionButton("imgDetails","Images",icon = icon("cogs")),
           collapsible = TRUE,
-          tags$ol(
-            tags$li("Reduced the maintenance costs by predicting the pipe failure using machine learning modeling. 
-                        These predictions helped in optimizing the maintenance schedules."), 
-            tags$li("Developed the shiny app to view the pipe failure network by failure category for each region in UK.")
-            
+          br(),
+          fluidRow(
+            column(width=6,
+                       tags$ol(
+                         tags$li("Reduced the maintenance costs by predicting the pipe failure using machine learning modeling. 
+                            These predictions helped in optimizing the maintenance schedules."), 
+                         tags$li("Developed the shiny app to view the pipe failure network by failure category for each region in UK.")
+                         
+                       )
+                   ),
+            column(width = 6,
+                   carousel(
+                     id = "mycarousel",width = 12,
+                     carouselItem(
+                       caption = "Item 1",
+                       tags$img(src = "waipp_images/stage1.PNG")
+                     ),
+                     carouselItem(
+                       caption = "Item 2",
+                       tags$img(src = "waipp_images/stage2.PNG")
+                     )
+                   )
+              )
           )
-        
       )
 }
 

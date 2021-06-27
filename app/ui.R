@@ -5,7 +5,8 @@
 ### header
 header <- dashboardHeader(leftUi = tagList(  
                                           actionLink(inputId = "mailId",label = "Email",icon = icon("envelope")),
-                                          actionLink(inputId = "notification",label = "Notification",icon = icon("comments"))
+                                          actionLink(inputId = "notification",label = "Notification",icon = icon("comments")),
+                                          actionLink(inputId = "dwnld_resume",label = "Resume",icon = icon("download"))
                                           )
                           )
   
@@ -41,31 +42,48 @@ body <- dashboardBody(
              )
           ),
       column(width = 7,
-             box(width = NULL,
-                 tabsetPanel(type = "pills",
-                     tabPanel(title = "Career",icon = icon("chart-line"),
-                              experience_details()
-                              ),
-                     tabPanel(title = "Project",icon = icon("users-cog"),
-                              project1(),project4(),
-                              project2(),project5(),
-                              project3(),project6(),
-                              project7()
-                              ),
-                     tabPanel(title = "Education",icon = icon("graduation-cap"),
-                              education_details()
-                     )
-                  )
-              )
+             div(class = "box-with-no-header",
+               box(width = NULL,
+                   tabsetPanel(type = "pills",
+                       tabPanel(title = "Career",icon = icon("chart-line"),
+                                experience_details()
+                                ),
+                       tabPanel(title = "Project",icon = icon("users-cog"),
+                                br(),
+                                project1(),project4(),
+                                project2(),project5(),
+                                project3(),project6(),
+                                project7()
+                                ),
+                       tabPanel(title = "Education",icon = icon("graduation-cap"),
+                                education_details()
+                       )
+                    )
+                )
+             )
            ),
       column(width = 2,
               box(width = NULL,
-                  title = "Achievements",status = "primary"
+                  title = "Achievements",status = "primary",
+                  carousel(
+                    id = "mycertificates",width = 12,
+                    carouselItem(
+                      caption = "Item 1",
+                      tags$img(src = "certificates/sql1.PNG")
+                    ),
+                    carouselItem(
+                      caption = "Item 2",
+                      tags$img(src = "certificates/sql2.PNG")
+                    ),
+                    carouselItem(
+                      caption = "Item 3",
+                      tags$img(src = "certificates/baseCamp.PNG")
+                    )
+                  )
+                  
                   
               ),
-             box(width = NULL,
-                 title = "Certifications",status = "primary"
-              ),
+             myCertifications(),
              box(width = NULL,
                  title = "Sprint Work",status = "primary",
                  

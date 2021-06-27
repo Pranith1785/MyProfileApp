@@ -46,8 +46,30 @@ experience_details <- function(){
                        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum"
           ),
           
+          timelineLabel("2010 - 2014",color = "orange"),
+          timelineItem(time = "4 Years",
+                       title = "Graduation",
+                       icon = icon("graduation-cap"),
+                       color = "olive",
+                       "Bachelor of Engineering in  Mechanical from Osmania University with ",dashboardLabel("77.67%",status = "warning")
+          ),
+          timelineLabel("2008 - 2010",color = "orange"),
+          timelineItem(time = "2 Years",
+                       title = "Class XII - Mathematics, Physics and Chemistry",
+                       icon = icon("book-reader"),
+                       color = "olive",
+                       "Majored in Mathematics, Physics and Chemistry with ",dashboardLabel("94.1%",status = "warning")
+          ),
+          timelineLabel("March 2008",color = "orange"),
+          timelineItem(time = "",
+                       title = "Class X",
+                       icon = icon("book-reader"),
+                       color = "olive",
+                       "Passed with ",dashboardLabel("82.67%",status = "warning")
+          ),
+          
         timelineStart(color = 'blue')
         )
         )
-
+      
 }

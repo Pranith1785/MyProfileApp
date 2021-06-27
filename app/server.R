@@ -33,4 +33,28 @@ server <- function(input,output,session){
         )
     })
     
+    observeEvent(input$btn_close,{
+          removeModal()
+    })
+    
+    observeEvent(input$imgDetails, {
+      
+        showModal(
+            modalDialog(easyClose = TRUE,size = "l",
+                carousel(
+                  id = "mycarousel2",width = 12,
+                  carouselItem(
+                    caption = "Item 1",
+                    tags$img(src = "waipp_images/stage1.PNG")
+                  ),
+                  carouselItem(
+                    caption = "Item 2",
+                    tags$img(src = "waipp_images/stage2.PNG")
+                  )
+                )
+            )
+        )
+      
+    })
+    
 }
