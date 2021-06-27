@@ -3,8 +3,12 @@
 
 
 ### header
-header <- dashboardHeader()
-
+header <- dashboardHeader(leftUi = tagList(  
+                                          actionLink(inputId = "mailId",label = "Email",icon = icon("envelope")),
+                                          actionLink(inputId = "notification",label = "Notification",icon = icon("comments"))
+                                          )
+                          )
+  
 
 ## Sidebar
 sidebar <- dashboardSidebar(disable = TRUE,minified = FALSE)
@@ -43,11 +47,13 @@ body <- dashboardBody(
                               experience_details()
                               ),
                      tabPanel(title = "Project",icon = icon("users-cog"),
-                              project1(),
-                              box(title = "Project3",width = NULL)
+                              project1(),project4(),
+                              project2(),project5(),
+                              project3(),project6(),
+                              project7()
                               ),
                      tabPanel(title = "Education",icon = icon("graduation-cap"),
-                              education_details()                  
+                              education_details()
                      )
                   )
               )
@@ -55,22 +61,27 @@ body <- dashboardBody(
       column(width = 2,
               box(width = NULL,
                   title = "Achievements",status = "primary"
+                  
               ),
              box(width = NULL,
                  title = "Certifications",status = "primary"
               ),
              box(width = NULL,
-                 title = "Interests",status = "primary"
+                 title = "Sprint Work",status = "primary",
+                 
+                       plotlyOutput("sprintSplit")
+                       
                  )
              
             )
     )
   )
 
+footer <- dashboardFooter(strong("Copyright © 2021 Pranith Kumar. All rights reserved."))
 
-
-ui <- dashboardPage(
-                    header = header,
+ui <- dashboardPage(header = header,
                     sidebar = sidebar,
-                    body = body)                                                    
+                    body = body,
+                    footer = footer
+                      )                                                    
 

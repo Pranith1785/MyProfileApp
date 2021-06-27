@@ -1,7 +1,7 @@
 
 
 
-my_profile <- function(username = "Paul", imgPath,userposition = "looking for job"){
+my_profile <- function(username = "Pranith Kumar", imgPath,userposition = "looking for job"){
   
         box(
           title = "",
@@ -24,6 +24,7 @@ my_profile <- function(username = "Paul", imgPath,userposition = "looking for jo
                        href = "https://github.com/Pranith1785",
                        icon = icon("github")
                      )
+                     
               )
             ),
             boxProfileItem(

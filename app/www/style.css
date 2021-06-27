@@ -29,3 +29,7 @@ a {
     width: 142px;
 }
 
+.navbar-custom-menu{
+    float: right !important;
+    margin-right: 10px;
+}
