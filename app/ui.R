@@ -33,36 +33,40 @@ body <- dashboardBody(
              ),
              fluidRow(
                column(width = 12,
+                      ## Top programming languages
                       program_languages()
                )
              ),
              fluidRow(
                column(width = 12,
+                     ## All Skills
                      skills()
                )
              )
           ),
       column(width = 7,
-             div(class = "box-with-no-header",
+             #div(class = "box-with-no-header",
                box(width = NULL,
                    controlbarMenu(id = "mycareer-projects-info",
                           controlbarItem(title = "Career",icon = icon("chart-line"),
-                                         experience_details()
+                                            ## Experience timeline
+                                            experience_details()
                                         ),
                           controlbarItem(title = "Project",icon = icon("users-cog"),
                                          br(),
-                                         project1(),project4(),project8(),
-                                         project2(),project5(),
-                                         project3(),project6(),
-                                         project7()
-                                        ),
-                          controlbarItem(title = "Education",icon = icon("graduation-cap"),
-                                         education_details()
+                                         ## Project detail boxes
+                                         proj_waipp(),
+                                         proj_dqr(),
+                                         proj_roadCondition(),
+                                         proj_fleet2zero(),
+                                         proj_archDrawing(),
+                                         proj_tdd(),
+                                         proj_autopay(),
+                                         proj_sss()
                                         )
                           )
-                     
                 )
-             )
+             #)
            ),
       column(width = 2,
               box(width = NULL,
@@ -86,20 +90,21 @@ body <- dashboardBody(
              myCertifications(),
              box(width = NULL,
                  title = "Sprint Work",status = "primary",
-                 
-                       plotlyOutput("sprintSplit")
+                      
+                       plotlyOutput("sprintSplit",width = "250px",height = "280px")
                        
                  )
              
             )
     )
   )
-
+## footer info
 footer <- dashboardFooter(strong("Copyright © 2021 Pranith Kumar. All rights reserved."))
 
+## adding anll UI parts
 ui <- dashboardPage(header = header,
                     sidebar = sidebar,
                     body = body,
                     footer = footer
-                      )                                                    
+                    )                                                    
 

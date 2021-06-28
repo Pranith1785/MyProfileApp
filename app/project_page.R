@@ -1,14 +1,12 @@
 
 
-project1 <- function(){
+proj_waipp <- function(){
   
       box(title = "Water AI Pipe Indicator",
           icon = icon("brain"),
           width = NULL,
           status = "primary",
-          label = actionButton("imgDetails","Images",icon = icon("cogs")),
           collapsible = TRUE,
-          br(),
           fluidRow(
             column(width=6,
                        tags$ol(
@@ -40,7 +38,7 @@ project1 <- function(){
 }
 
 
-project2 <- function(){
+proj_fleet2zero <- function(){
   
     box(title = "Fleet 2 zero",
         width = NULL,
@@ -56,7 +54,7 @@ project2 <- function(){
     )
 }
 
-project3 <- function(){
+proj_archDrawing <- function(){
   
   box(title = "Architectural Drawing",
       width = NULL,
@@ -74,12 +72,11 @@ project3 <- function(){
   )
 }
 
-project4 <- function(){
+proj_roadCondition <- function(){
   
   box(title = "Road Condition Prediction",
       width = NULL,
-      label = boxLabel("shaj",status = "primary",style = "square"),
-      collapsible = TRUE,
+      status = "primary",
       tags$ol(
         tags$li("Predicting the condition of a road for London, UK. To suggest the best possible time to do maintenance activity, 
                 which will reduce the cost of maintenance."), 
@@ -90,7 +87,7 @@ project4 <- function(){
   )
 }
 
-project5 <- function(){
+proj_tdd <- function(){
   
   box(title = "Technical Due Diligence",
       width = NULL,
@@ -108,7 +105,7 @@ project5 <- function(){
 }
 
 
-project6 <- function(){
+proj_autopay <- function(){
   
   box(title = "AutoPay - 401K Retirement Plans",
       width = NULL,
@@ -124,7 +121,7 @@ project6 <- function(){
   )
 }
 
-project7 <- function(){
+proj_sss <- function(){
   
   box(title = "SSS",background = "gray",
       width = NULL,
@@ -142,7 +139,7 @@ project7 <- function(){
 }
 
 
-project8 <- function(){
+proj_dqr <- function(){
   
   box(title = "Data Quality Repair",background = "gray",
       width = NULL,
