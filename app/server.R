@@ -11,8 +11,10 @@ server <- function(input,output,session){
           labels = c('Code','research','dashboard','meetings')
           values = c(24, 5,5 ,6 )
           
-          fig <- plot_ly(type='pie', labels=labels, values=values, 
-                         textinfo='label+percent')
+          # fig <- plot_ly(type='pie', labels=labels, values=values, 
+          #                textinfo='label+percent')
+          fig <- plot_ly(labels = labels,values = values) %>% add_pie(hole = 0.6,textinfo='label+percent')
+          
           fig %>% layout(showlegend = FALSE) %>% config(displayModeBar = FALSE)
       
       

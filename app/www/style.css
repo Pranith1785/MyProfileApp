@@ -42,3 +42,30 @@ a {
     float: right !important;
     margin-right: 10px;
 }
+
+.nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover {
+    color: #f4f4f4 !important;
+    background-color: #337ab7 !important;
+   
+}
+
+.timeline>li>.timeline-item>.timeline-header {
+    
+    font-weight: bold;
+}
+
+.timeline>li>.timeline-item>.time {
+    color: #337ab7;
+    float: right;
+    padding: 10px;
+    font-size: 12px;
+}
+
+.image-footer{
+        height: 20px;
+        width: 20px;
+        padding-right: 3px;
+}
+
+
+

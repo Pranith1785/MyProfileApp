@@ -27,7 +27,8 @@ body <- dashboardBody(
              fluidRow(
                column(width = 12,
                  
-                 my_profile("Pranith Kumar Gourisetty","myImage.jpg","Analytics Development Engineer")
+                 ## MY profile box
+                 my_profile()
                )
              ),
              fluidRow(
@@ -44,21 +45,22 @@ body <- dashboardBody(
       column(width = 7,
              div(class = "box-with-no-header",
                box(width = NULL,
-                   tabsetPanel(type = "pills",
-                       tabPanel(title = "Career",icon = icon("chart-line"),
-                                experience_details()
-                                ),
-                       tabPanel(title = "Project",icon = icon("users-cog"),
-                                br(),
-                                project1(),project4(),
-                                project2(),project5(),
-                                project3(),project6(),
-                                project7()
-                                ),
-                       tabPanel(title = "Education",icon = icon("graduation-cap"),
-                                education_details()
-                       )
-                    )
+                   controlbarMenu(id = "mycareer-projects-info",
+                          controlbarItem(title = "Career",icon = icon("chart-line"),
+                                         experience_details()
+                                        ),
+                          controlbarItem(title = "Project",icon = icon("users-cog"),
+                                         br(),
+                                         project1(),project4(),project8(),
+                                         project2(),project5(),
+                                         project3(),project6(),
+                                         project7()
+                                        ),
+                          controlbarItem(title = "Education",icon = icon("graduation-cap"),
+                                         education_details()
+                                        )
+                          )
+                     
                 )
              )
            ),
@@ -80,8 +82,6 @@ body <- dashboardBody(
                       tags$img(src = "certificates/baseCamp.PNG")
                     )
                   )
-                  
-                  
               ),
              myCertifications(),
              box(width = NULL,

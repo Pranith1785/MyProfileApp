@@ -1,16 +1,16 @@
 
 
 
-my_profile <- function(username = "Pranith Kumar", imgPath,userposition = "looking for job"){
+my_profile <- function(){
         
   div(class = "box-with-no-header",
         box(
           title = "",
           width = NULL,
           boxProfile(
-            image = imgPath,
-            title = username,
-            subtitle = userposition,
+            image = "myImage.jpg",
+            title = "Pranith Kumar Gourisetty",
+            subtitle = "Analytics Development Engineer",
             bordered = TRUE,
             br(),br(),
             fluidRow(
@@ -30,7 +30,9 @@ my_profile <- function(username = "Pranith Kumar", imgPath,userposition = "looki
             ),
             boxProfileItem(
               title = "About Me",
-              description = "Engineer with 6+ years of experience in analytics field. Strong in algorithms and logical"
+              description = "I am a Data Scientist who is keen to solve problems and to develop computer tools and processes 
+                              for reproducing and using the extraction of data insights. 
+                              I have more than 6 years of IT industry experience that contribute business value"
             )
           )
         )
@@ -61,7 +63,7 @@ program_languages <- function(){
       ),
       fluidRow(
         column(width = 8, h4("SQL")),
-        column(width = 4, starBlock(3,max = 5))
+        column(width = 4, starBlock(3,max = 5,color = "green"))
       )
   )
   

@@ -10,11 +10,11 @@ experience_details <- function(){
           reversed = TRUE,
           #timelineEnd(color = "red"),
           timelineLabel("Feb 2019",color = "orange"),
-          timelineItem(time = "now",
-                       title = dashboardLabel("Arcadis Consulting India Pvt Ltd",status = "warning"),
+          
+          timelineItem(title = "Arcadis Consulting India Pvt Ltd - Data Scientist",
                        icon = icon("building"),
                        color = "orange",
-                       footer = "Here is the footer",
+                       time = dashboardLabel("Present",status = "primary"),
                        "Working as consultant as data scientist.Lorem ipsum dolor sit amet, consectetur 
                        adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex 
@@ -22,11 +22,11 @@ experience_details <- function(){
                        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum"
                   ),
           timelineLabel("Nov 2016",color = "red"),
-          timelineItem(time = dashboardLabel("2 years 3 months",status = "primary"),
-                       title = "ADP Pvt Ltd",
+          
+          timelineItem(title = "ADP Pvt Ltd - Senior Member Technical",
                        icon = icon("building"),
                        color = "red",
-                       footer = "Here is the footer",
+                       time = dashboardLabel("2 years 3 months",status = "primary"),
                        "Working as consultant as data scientist.Lorem ipsum dolor sit amet, consectetur 
                        adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex 
@@ -34,11 +34,11 @@ experience_details <- function(){
                        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum"
           ),
           timelineLabel("Sep 2014",color = "blue"),
-          timelineItem(time = "2 years 2 months",
-                       title = "Capgemini Technology Solutions India Ltd",
+          
+          timelineItem(title = "Capgemini India Ltd -  Senior Software Engineer",
                        icon = icon("briefcase"),
                        color = "blue",
-                       footer = "Here is the footer",
+                       time = dashboardLabel("2 years 2 months",status = "primary"),
                        "Working as consultant as data scientist.Lorem ipsum dolor sit amet, consectetur 
                        adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex 
@@ -47,24 +47,24 @@ experience_details <- function(){
           ),
           
           timelineLabel("2010 - 2014",color = "orange"),
-          timelineItem(time = "4 Years",
-                       title = "Graduation",
+          timelineItem(title = "Graduation",
                        icon = icon("graduation-cap"),
                        color = "olive",
+                       time = "4 Years",
                        "Bachelor of Engineering in  Mechanical from Osmania University with ",dashboardLabel("77.67%",status = "warning")
           ),
           timelineLabel("2008 - 2010",color = "orange"),
-          timelineItem(time = "2 Years",
-                       title = "Class XII - Mathematics, Physics and Chemistry",
+          timelineItem(title = "Class XII - Mathematics, Physics and Chemistry",
                        icon = icon("book-reader"),
                        color = "olive",
+                       time = "2 Years",
                        "Majored in Mathematics, Physics and Chemistry with ",dashboardLabel("94.1%",status = "warning")
           ),
           timelineLabel("March 2008",color = "orange"),
-          timelineItem(time = "",
-                       title = "Class X",
+          timelineItem(title = "Class X",
                        icon = icon("book-reader"),
                        color = "olive",
+                       time = "",
                        "Passed with ",dashboardLabel("82.67%",status = "warning")
           ),
           

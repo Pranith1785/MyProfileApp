@@ -3,6 +3,7 @@
 project1 <- function(){
   
       box(title = "Water AI Pipe Indicator",
+          icon = icon("brain"),
           width = NULL,
           status = "primary",
           label = actionButton("imgDetails","Images",icon = icon("cogs")),
@@ -30,6 +31,10 @@ project1 <- function(){
                      )
                    )
               )
+          ),
+          footer = div(class="timeline-footer-image",
+                       tags$image(class="image-footer",src="r_programming.png"),
+                       tags$image(class="image-footer", src="shiny.png")
           )
       )
 }
@@ -130,6 +135,25 @@ project7 <- function(){
         tags$li("Developed Automation script to compare the multiple tables in the database by using web services which decreased manual efforts by 18 hours for a single iteration."),
         tags$li("Involved in end-to-end automation project inclusive of planning, effort, design, scope, estimation, 
                 resource coordination, and delivery as per specified time - frames in an Agile Environment.")
+        
+      )
+      
+  )
+}
+
+
+project8 <- function(){
+  
+  box(title = "Data Quality Repair",background = "gray",
+      width = NULL,
+      label = boxLabel("shaj",status = "primary",style = "square"),
+      collapsible = TRUE,
+      tags$ol(
+        tags$li("Data cleaning is the first part of any modeling of asset analysis. And this dynamic app can save you thousands, 
+                given the share of the total project. Data Quality Repair is an affordable, straightforward solution that the business 
+                user does not require data scientists."), 
+        tags$li("2.Data quality repair provides great visualizations to assist users in data transformation. With the application, we're able to get data sets ready to model and optimize assets."),
+       
         
       )
       
