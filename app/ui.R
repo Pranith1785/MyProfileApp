@@ -94,9 +94,8 @@ body <- dashboardBody(
                        plotlyOutput("sprintSplit",width = "250px",height = "280px")
                        
                  )
-             
             )
-    )
+     )
   )
 ## footer info
 footer <- dashboardFooter(strong("Copyright © 2021 Pranith Kumar. All rights reserved."))
