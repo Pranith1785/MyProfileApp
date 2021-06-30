@@ -8,27 +8,14 @@ proj_waipp <- function(){
           status = "primary",
           collapsible = TRUE,
           fluidRow(
-            column(width=6,
+            column(width=12,
                        tags$ol(
                          tags$li("Reduced the maintenance costs by predicting the pipe failure using machine learning modeling. 
                             These predictions helped in optimizing the maintenance schedules."), 
                          tags$li("Developed the shiny app to view the pipe failure network by failure category for each region in UK.")
                          
                        )
-                   ),
-            column(width = 6,
-                   carousel(
-                     id = "mycarousel",width = 12,
-                     carouselItem(
-                       caption = "Item 1",
-                       tags$img(src = "waipp_images/stage1.PNG")
-                     ),
-                     carouselItem(
-                       caption = "Item 2",
-                       tags$img(src = "waipp_images/stage2.PNG")
-                     )
                    )
-              )
           ),
           footer = "Shiny, R, XGBoost and leaflet js "
       )
@@ -152,6 +139,39 @@ proj_dqr <- function(){
       ),
       footer = "Shiny, HTML and R"
       
+  )
+}
+
+
+ipl_score <- function(){
+  
+  box(title = "IPL Team Score Predictor",
+      width = NULL,
+      status = "primary",
+      collapsible = TRUE,
+      fluidRow(
+        column(width=6,
+               tags$ol(
+                 tags$li("It's a fun project that aims to predict a team's final score in a specific match scenario."), 
+                 tags$li("Converted the machine learning model to an API and implemented it in a Flask application.")
+                 
+               )
+        ),
+        column(width = 6,
+               carousel(
+                 id = "mycarousel",width = 12,
+                 carouselItem(
+                   caption = "Home page",
+                   tags$img(src = "ipl_images/ipl1.PNG")
+                 ),
+                 carouselItem(
+                   caption = "predicction",
+                   tags$img(src = "ipl_images/ipl2.PNG")
+                 )
+               )
+        )
+      ),
+      footer = "Python, Flask, HTML and CSS"
   )
 }
 

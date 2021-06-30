@@ -56,6 +56,7 @@ body <- dashboardBody(
                                          br(),
                                          ## Project detail boxes
                                          proj_waipp(),
+                                         ipl_score(),
                                          proj_dqr(),
                                          proj_roadCondition(),
                                          proj_fleet2zero(),
