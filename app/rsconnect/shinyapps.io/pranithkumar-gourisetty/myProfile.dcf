@@ -1,0 +1,13 @@
+name: myProfile
+title: myProfile
+username:
+account: pranithkumar-gourisetty
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 4341113
+bundleId: 4775732
+url: https://pranithkumar-gourisetty.shinyapps.io/myProfile/
+when: 1625118972.32105
+lastSyncTime: 1625118972.32105
+asMultiple: FALSE
+asStatic: FALSE

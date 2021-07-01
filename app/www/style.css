@@ -30,9 +30,15 @@ a {
 }
 
 .box-with-no-header .box-header {
-   padding: 0px !important;
+  display: none;
     
 }
+
+.box-with-no-header .box-body .box-header {
+  display: block;
+    
+}
+
 
 .box-with-no-header .box-header.with-border {
     border-bottom: 0px solid #f4f4f4 !important; 

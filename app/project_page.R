@@ -26,7 +26,6 @@ proj_fleet2zero <- function(){
   
     box(title = "Fleet 2 zero",
         width = NULL,
-        label = boxLabel("shaj",status = "primary",style = "square"),
         collapsible = TRUE,
         tags$ol(
           tags$li("Shiny dashboard to know the metrics like vehicles (heavy and passenger) count, amount of pollution, electric vehicles count, 
@@ -42,7 +41,6 @@ proj_archDrawing <- function(){
   
   box(title = "Architectural Drawing",
       width = NULL,
-      label = boxLabel("shaj",status = "primary",style = "square"),
       collapsible = TRUE,
       tags$ol(
         tags$li("Lead a team of 3 in project architecture design, mentoring and Coding."), 
@@ -76,7 +74,6 @@ proj_tdd <- function(){
   
   box(title = "Technical Due Diligence",
       width = NULL,
-      label = boxLabel("shaj",status = "primary",style = "square"),
       collapsible = TRUE,
       tags$ol(
         tags$li("Developed a Machine learning model for predicting the Capital expenditure of an asset by using basic details of property 
@@ -94,7 +91,6 @@ proj_autopay <- function(){
   
   box(title = "AutoPay - 401K Retirement Plans",
       width = NULL,
-      label = boxLabel("shaj",status = "primary",style = "square"),
       collapsible = TRUE,
       tags$ol(
         tags$li("Performed data collection, data pre-processing (cleaning, mapping, wrangling, etc), exploratory data analysis (EDA), 
@@ -111,7 +107,6 @@ proj_sss <- function(){
   
   box(title = "SSS",background = "gray",
       width = NULL,
-      label = boxLabel("shaj",status = "primary",style = "square"),
       collapsible = TRUE,
       tags$ol(
         tags$li("Design and developed application interface with an HP Test Automation Framework (UFT) in VB Script. Experienced in 'Functional Testing' and 'Regression Testing'"), 
@@ -129,7 +124,6 @@ proj_dqr <- function(){
   
   box(title = "Data Quality Repair",background = "gray",
       width = NULL,
-      label = boxLabel("shaj",status = "primary",style = "square"),
       collapsible = TRUE,
       tags$ol(
         tags$li("Data cleaning is the first part of any modeling of asset analysis. And this dynamic app can save you thousands, 

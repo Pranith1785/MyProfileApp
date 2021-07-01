@@ -45,7 +45,7 @@ body <- dashboardBody(
              )
           ),
       column(width = 7,
-             #div(class = "box-with-no-header",
+             div(class = "box-with-no-header",
                box(width = NULL,
                    controlbarMenu(id = "mycareer-projects-info",
                           controlbarItem(title = "Career",icon = icon("chart-line"),
@@ -67,7 +67,7 @@ body <- dashboardBody(
                                         )
                           )
                 )
-             #)
+             )
            ),
       column(width = 2,
               box(width = NULL,
