@@ -15,8 +15,11 @@ experience_details <- function(){
                        icon = icon("building"),
                        color = "orange",
                        time = dashboardLabel("Present",status = "primary"),
-                       "As a data scientist consultant, I was responsible for all stages of the analytic and app development cycles.
-                       Working on increasing the complexity of tasks while also coaching others."
+                       "As a data scientist, I collaborated closely with business managers to understand the use case (problem) and had an active discussion 
+                       with the team lead while developing the machine learning model.Team lead responsible for understanding the business problems from clients 
+                       and coming up with analytical solution.I worked closely with the product owner to integrate the ML model into the application.
+                       I mentored and guided three of my junior colleagues in their efforts to improve their skills.
+                       Creation and maintenance of pipelines for application/ml models in various environments (development, test and live)."
                   ),
           timelineLabel("Nov 2016",color = "red"),
           
@@ -24,11 +27,10 @@ experience_details <- function(){
                        icon = icon("building"),
                        color = "red",
                        time = dashboardLabel("2 years 3 months",status = "primary"),
-                       "Working as consultant as data scientist.Lorem ipsum dolor sit amet, consectetur 
-                       adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                       Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex 
-                       ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-                       Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum"
+                       "As a data analyst that understands the data and can offer information on a dashboard for a power BI.
+                       Close worked with senior data scientists to understand the business problem to solve the problem.
+                       Understanding and updating the existing machine learning models and pushing the latest changes to pipelines.
+                       Working closely with the team and delivering the sprint user stories"
           ),
           timelineLabel("Sep 2014",color = "blue"),
           
@@ -36,11 +38,9 @@ experience_details <- function(){
                        icon = icon("briefcase"),
                        color = "blue",
                        time = dashboardLabel("2 years 2 months",status = "primary"),
-                       "Working as consultant as data scientist.Lorem ipsum dolor sit amet, consectetur 
-                       adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                       Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex 
-                       ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-                       Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum"
+                       "As an automation engineer, the scripts of ALM and UFT can be maintained and executed.
+                       Understand case/manual usage steps and develop UFT automation scripts via the VB Script.
+                       Addressed issues and took independent measures to solve problems.Lead a team of three to develop automation scripts."
           ),
           
           timelineLabel("2010 - 2014",color = "orange"),
