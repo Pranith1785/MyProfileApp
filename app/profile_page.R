@@ -78,6 +78,8 @@ skills <- function(){
           icon = icon("brain"),
           dashboardLabel("Machine Learning", status = "success", style = "square"),
           dashboardLabel("Flask", status = "primary", style = "square"),
+          dashboardLabel("Dash", status = "primary", style = "square"),
+          dashboardLabel("Power BI", status = "warning", style = "square"),
           dashboardLabel("Django", status = "info", style = "square"),
           dashboardLabel("Sklearn", status = "warning", style = "square"),
           dashboardLabel("pandas", status = "danger", style = "square"),
@@ -93,10 +95,7 @@ skills <- function(){
           dashboardLabel("Logistic Regression", status = "danger", style = "square"),
           dashboardLabel("Neural Network", status = "success", style = "square"),
           dashboardLabel("Time Series", status = "primary", style = "square"),
-          dashboardLabel("Power BI", status = "warning", style = "square"),
           dashboardLabel("Docker", status = "info", style = "square")
-          
-          
       )
   
 }

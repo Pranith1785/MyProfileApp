@@ -9,12 +9,24 @@ experience_details <- function(){
           width = 12,
           reversed = TRUE,
           #timelineEnd(color = "red"),
+          timelineLabel("March 2022",color = "green"),
+          
+          timelineItem(title = "Geninvo Technologies Pvt. Ltd. - Senior Data Scientist",
+                       icon = icon("building"),
+                       color = "green",
+                       time = dashboardLabel("Present ",status = "primary"),
+                       "Leading the product team and implementing REST APIs with Flask framework by comprehending various
+                        documents such as Clinical study reports(CSR), SAP, and PROTOCOL files.Maintaining the Git repo and dev and test env.
+                       Building applications using Dash framework and creating stunning and interactive charts after analysing
+                       and transforming the clinical data"
+          ),
+          
           timelineLabel("Feb 2019",color = "orange"),
           
           timelineItem(title = "Arcadis Consulting India Pvt Ltd - Data Scientist",
                        icon = icon("building"),
                        color = "orange",
-                       time = dashboardLabel("Present",status = "primary"),
+                       time = dashboardLabel("3 years 1 month",status = "primary"),
                        "As a data scientist, I collaborated closely with business managers to understand the use case (problem) and had an active discussion 
                        with the team lead while developing the machine learning model.Team lead responsible for understanding the business problems from clients 
                        and coming up with analytical solution.I worked closely with the product owner to integrate the ML model into the application.

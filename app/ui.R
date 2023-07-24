@@ -75,16 +75,16 @@ body <- dashboardBody(
                   carousel(
                     id = "mycertificates",width = 12,
                     carouselItem(
-                      caption = "Item 1",
+                      caption = "Dash",
+                      tags$img(src = "certificates/dash_proj.jpg")
+                    ),
+                    carouselItem(
+                      caption = "SQL",
                       tags$img(src = "certificates/sql1.PNG")
                     ),
                     carouselItem(
                       caption = "Item 2",
                       tags$img(src = "certificates/sql2.PNG")
-                    ),
-                    carouselItem(
-                      caption = "Item 3",
-                      tags$img(src = "certificates/baseCamp.PNG")
                     )
                   )
               ),
